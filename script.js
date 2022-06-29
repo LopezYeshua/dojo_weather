@@ -6,6 +6,8 @@ function hide() {
 }
 
 function toFarenheit() {
-    temperature = temperature.innerText*(9/5) + 32;
-    return temperature;
+    var dummy = 0;
+    dummy = temperature.innerText*(9/5) + 32;
+    console.log(dummy);
+    temperature.innerText = dummy;
 }
