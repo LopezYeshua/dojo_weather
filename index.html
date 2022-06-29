@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container flex">
+            <h1>DojoWeather</h1>
+            <div class=" cities flex">
+                <h3>Burbank</h3>
+                <h3>Chicago</h3>
+                <h3>Dallas</h3>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="city-header flex">
+            <h2>San Jose</h2>
+            <p>show temperature in 
+                <select name="temp" id="temp">
+                    <option value="c">°C</option>
+                    <option value="f">°F</option>
+                </select>
+            </p>
+        </div>
+        <div class="flex">
+            <div class="weather-container">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <div class="temps flex">
+                    <p class="hot">24°</p>
+                    <p class="cold">18°</p>
+                </div>
+            </div>
+            <div class="weather-container"></div>
+            <div class="weather-container"></div>
+            <div class="weather-container"></div>
+        </div>
+        <div class="cookie-container"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
