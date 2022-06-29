@@ -5,9 +5,17 @@ function hide() {
     el.remove();
 }
 
-function toFarenheit() {
-    var dummy = 0;
-    dummy = temperature.innerText*(9/5) + 32;
-    console.log(dummy);
-    temperature.innerText = dummy;
+function changeTemp(element) {
+    if (element.value == "f") {
+        console.log(element.value);
+        var temp = 0;
+        temp = temperature.innerText*(9/5) + 32;
+        temperature.innerText = temp;
+    }
+    else if (element.value == "c") {
+        console.log(element.value);
+        var temp = 0;
+        temp = temperature.innerText*5/9;
+        temperature.innerText = temp;
+    }
 }
