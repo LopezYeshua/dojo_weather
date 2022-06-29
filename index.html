@@ -12,9 +12,9 @@
         <div class="nav-container flex">
             <h1>DojoWeather</h1>
             <div class=" cities flex">
-                <h3>Burbank</h3>
-                <h3>Chicago</h3>
-                <h3>Dallas</h3>
+                <h3 onclick="alert('You clicked on ' + this.innerText)">Burbank</h3>
+                <h3 onclick="alert('You clicked on ' + this.innerText)">Chicago</h3>
+                <h3 onclick="alert('You clicked on ' + this.innerText)">Dallas</h3>
             </div>
         </div>
     </header>
@@ -24,25 +24,63 @@
             <p>show temperature in 
                 <select name="temp" id="temp">
                     <option value="c">°C</option>
-                    <option value="f">°F</option>
+                    <option onclick="toFarenheit()" value="f">°F</option>
                 </select>
             </p>
         </div>
+        <!-- Beginning of weather containers -->
         <div class="flex">
-            <div class="weather-container">
+            <div class="weather-container flex">
                 <h2>Today</h2>
                 <img src="./assets/some_rain.png" alt="some rain">
                 <p>some rain</p>
                 <div class="temps flex">
-                    <p class="hot">24°</p>
-                    <p class="cold">18°</p>
+                    <p class="hot"><span id="hot0">24</span>°</p>
+                    <p class="cold"><span id="cold0">18</span>°</p>
                 </div>
             </div>
-            <div class="weather-container"></div>
-            <div class="weather-container"></div>
-            <div class="weather-container"></div>
+            <div class="weather-container flex">
+                <h2>Today</h2>
+                <img src="./assets/some_sun.png" alt="some sun">
+                <p>some rain</p>
+                <div class="temps flex">
+                    <p class="hot"><span id="hot1">27</span>°</p>
+                    <p class="cold"><span id="cold1">19</span>°</p>
+                </div>
+            </div>
+            <div class="weather-container flex">
+                <h2>Today</h2>
+                <img src="./assets/some_clouds.png" alt="some clouds">
+                <p>some rain</p>
+                <div class="temps flex">
+                    <p class="hot"><span id="hot2">24</span>°</p>
+                    <p class="cold"><span id="cold2">16</span>°</p>
+                </div>
+            </div>
+            <div class="weather-container flex">
+                <h2>Today</h2>
+                <img src="./assets/some_sun.png" alt="some sun">
+                <p>some rain</p>
+                <div class="temps flex">
+                    <p class="hot"><span id="hot3">26</span>°</p>
+                    <p class="cold"><span id="cold3">21</span>°</p>
+                </div>
+            </div>
         </div>
-        <div class="cookie-container"></div>
+        <!-- End of weather containers -->
+        <div id="cookieAlert"class="cookie-container">
+            <div class="flex">
+                <img src="./assets/cookie.png" alt="cookie">
+                <div class="cookie-text">
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize
+                        content and ads, to provide social media features and to 
+                        analyse our traffic. <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button onclick="hide()" class="btn">I Accept</button>
+            </div>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>

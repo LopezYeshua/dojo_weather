@@ -18,7 +18,6 @@
 .container {
     width: 75%;
     min-height: 100px;
-    background-color: lightblue;
     margin: 0 auto;
 }
 
@@ -34,25 +33,22 @@
 }
 
 header {
-    min-height: 50px;
     background-color: #9fc5f8;
 }
 
 .city-header {
     padding: 2% 0%;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
+    margin-bottom: 3%;
 }
 
 .weather-container {
     padding: 2%;
-    background-color: cyan;
+    background-color: #eeeeee;
     text-align: center;
+    flex-direction: column;
 }
 
-.cookie-container {
-    min-height: 50px;
-    background-color: sienna;
-}
 
 .cities {
     padding: 1% 4%;
@@ -65,18 +61,42 @@ select {
 .weather-container img {
     width: 100px;
     border-radius: 50%;
+    flex: 2;
+}
+
+.weather-container h2 {
+    flex: 1;
 }
 
 .temps {
-    margin-top: 10%;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .hot {
     color: red;
     font-weight: bold;
+    flex: 1;
 }
 
 .cold {
     color: blue;
     font-weight: bold;
+    flex: 1;
+}
+/* End of weather container content */
+
+.cookie-container {
+    background-color: #eeeeee;
+    padding: .5em 1em;
+    margin-top: .5em;
+    border: 3px solid black;
+}
+
+.btn {
+    padding: .5em 1em;
+    background-color: #9fc5f8;
+    box-shadow: 2px 2px 1px black;
+    color: black;
+    white-space: nowrap;
 }
